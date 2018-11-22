@@ -1,8 +1,8 @@
-package org.yqj.eureka.server;
+package org.yqj.eureka.client;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +20,7 @@ import java.net.UnknownHostException;
  * Email: yaoqijunmail@foxmail.com
  */
 @SpringBootApplication
-@EnableEurekaServer
+@EnableEurekaClient
 @Controller
 public class BootDemoApplication {
     public static void main(String[] args) {
