@@ -1,16 +1,12 @@
 logging:
   level:
     root: INFO
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 server:
-  port: 8888
+  port: 9093
 spring:
   application:
-    name: eureka-server
+    name: service-hi-v1-9093
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
