@@ -1,15 +1,12 @@
 logging:
   level:
-    root: info
+    root: INFO
+server:
+  port: 8080
 spring:
   application:
-    name: eureka-server
-server:
-  port: 7001
+    name: ribbon-consumer
 eureka:
-  instance:
-    hostname: localhost
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/
-

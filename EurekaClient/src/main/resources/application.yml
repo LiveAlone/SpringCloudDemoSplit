@@ -1,12 +1,13 @@
 logging:
   level:
-    root: INFO
+    root: info
 server:
-  port: 9093
+  port: 9092
 spring:
   application:
-    name: service-hi-v1-9093
+    name: service-hi-v1
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/
+    register-with-eureka: true
