@@ -25,6 +25,16 @@ public class HelloController {
         return helloService.hiService();
     }
 
+    @RequestMapping(value = "/delay")
+    public String delay(){
+        return helloService.delay();
+    }
+
+    @RequestMapping(value = "/exception")
+    public String exception(){
+        return helloService.exception();
+    }
+
     @RequestMapping(value = "/feign")
     public String hiWithFeign(){
         return feignHelloService.sayHi();

@@ -37,4 +37,19 @@ public class ServerInfoController {
         }
         return "SUCCESS";
     }
+
+    @RequestMapping(value = "/exception", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public String requestWithError(){
+        log.info("server info controller request error called");
+        throw new IllegalStateException("error server status");
+    }
+
+    @RequestMapping(value = "/delay", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public String requestWithDelay() throws InterruptedException{
+        log.info("server info controller request with delay called");
+        Thread.sleep(5000);
+        return "success";
+    }
 }
