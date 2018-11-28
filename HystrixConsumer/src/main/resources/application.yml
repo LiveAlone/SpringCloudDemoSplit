@@ -1,0 +1,12 @@
+logging:
+  level:
+    root: INFO
+server:
+  port: 8080
+spring:
+  application:
+    name: ribbon-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
