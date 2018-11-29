@@ -2,7 +2,7 @@ logging:
   level:
     root: info
 server:
-  port: 9092
+  port: 9091
 spring:
   application:
     name: service-hi-v1
