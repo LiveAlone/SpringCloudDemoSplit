@@ -10,3 +10,16 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/
+management:
+  server:
+    port: 8090
+  endpoint:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+      base-path: /
+#turbine:
+#  app-config: eureka-consumer-ribbon-hystrix
+#  cluster-name-expression: default
+#  combine-host-port: true

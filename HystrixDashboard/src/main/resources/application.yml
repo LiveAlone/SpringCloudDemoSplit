@@ -1,0 +1,12 @@
+logging:
+  level:
+    root: INFO
+server:
+  port: 8081
+spring:
+  application:
+    name: hystrix-dashboard
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
